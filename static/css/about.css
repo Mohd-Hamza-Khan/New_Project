@@ -1,0 +1,258 @@
+/* General Section Styles */
+.custom-section {
+    position: relative;
+    color: #fff;
+    overflow: hidden;
+}
+
+.custom-section .bg-image {
+    background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+}
+
+.custom-section-content {
+    position: relative;
+    z-index: 1;
+    text-align: center;
+}
+
+/* Default sizes and padding */
+.section-height-1 { height: 50px; }
+.section-height-2 { height: 70px; }
+.section-height-3 { height: 230px; }
+.section-height-4 { height: 500px; }
+.section-height-5 { height: 500px; }
+.section-padding-1 { padding: 20px; }
+.section-padding-2 { padding: 40px; }
+.section-padding-3 { padding: 60px; }
+.section-padding-4 { padding: 80px; }
+.section-padding-5 { padding: 80px; }
+
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .section-height-1 { height: 70px; }
+    .section-height-2 { height: 90px; }
+    .section-height-3 { height: 300px; }
+    .section-padding-1 { padding: 15px; }
+    .section-padding-2 { padding: 30px; }
+    .section-padding-3 { padding: 45px; }
+}
+
+@media (max-width: 576px) {
+    .section-height-1 { height: 90px; }
+    .section-height-2 { height: 120px; }
+    .section-height-3 { height: 400px; }
+    .section-padding-1 { padding: 10px; }
+    .section-padding-2 { padding: 20px; }
+    .section-padding-3 { padding: 30px; }
+}
+
+/* Blurred Box */
+.blurred-box {
+    position: absolute;
+    bottom: 0px;
+    left: 50%;
+    transform: translateX(-50%);
+    padding: 15px 30px;
+    background: rgba(255, 255, 255, 0.059);
+    backdrop-filter: blur(4px);
+    border-radius: 0px;
+    max-width: 90%;
+    text-align: center;
+    z-index: 2;
+}
+
+.blurred-box p {
+    margin: 0;
+    font-size: 24px;
+}
+
+/* @media (max-width: 768px) {
+    .blurred-box {
+        bottom: 10px;
+        padding: 10px 20px;
+        font-size: 14px;
+    }
+}
+
+@media (max-width: 576px) {
+    .blurred-box {
+        bottom: 5px;
+        padding: 8px 15px;
+        font-size: 12px;
+    }
+} */
+
+/* Section 4 Specific Styles */
+#section4 {
+    position: relative;
+    overflow: hidden;
+}
+
+.text-content {
+    padding: 20px;
+}
+
+.image-content {
+    text-align: center;
+}
+
+.image-content img {
+    max-width: 100%;
+    height: auto;
+}
+
+/* @media (max-width: 768px) {
+    #section4 .text-content, #section4 .image-content {
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .text-content, .image-content {
+        padding: 10px;
+    }
+} */
+
+/* Section 5 Specific Styles */
+.custom-image-container {
+    position: relative;
+    border-radius: 15px; /* Curved corners */
+    overflow: hidden; /* Ensure overflow is hidden for curved corners */
+}
+
+.custom-image-container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.custom-overlay {
+    position: absolute;
+    padding: 10px;
+    top: 0;
+    left: 22px;
+    width: 94%;
+    background: rgba(0, 0, 0, 0); /* Adjusted transparency */
+    color: #fff;
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+    padding: -0.5rem;
+    box-sizing: border-box;
+    border-radius: 15px; /* Same curve as the image */
+    text-align: start;
+}
+
+.custom-overlay p {
+    margin: 0;
+    font-size: 13px;
+    justify-content: start;
+}
+
+/* Responsive Adjustments for Section 5 */
+/* @media (max-width: 768px) {
+    .custom-image-container {
+        border-radius: 10px; /* Slightly reduced curve for smaller screens 
+    }
+
+    .custom-overlay p {
+        font-size: 11px; /* Adjust text size for smaller screens 
+    }
+}
+
+@media (max-width: 576px) {
+    .custom-image-container {
+        border-radius: 5px; /* Further reduced curve 
+    }
+
+    .custom-overlay p {
+        font-size: 13px; /* Further adjust text size 
+    }
+} */
+
+/* Section 6 Specific Styles */
+#section6 {
+    background-color: #f8f9fa; /* Light background for contrast */
+}
+
+.image-container {
+    position: relative;
+}
+
+.image-container img {
+    width: 90%;
+    height: auto;
+    display: block;
+}
+
+.text-content {
+    padding: 20px;
+}
+
+/* Responsive Adjustments */
+/* @media (max-width: 768px) {
+    .text-content {
+        padding: 15px; /* Adjust padding for medium screens 
+    }
+}
+
+@media (max-width: 576px) {
+    #section6 .row {
+        flex-direction: column-reverse; /* Stack text below the image on small screens 
+    }
+
+    .text-content {
+        padding: 10px; /* Adjust padding for small screens 
+    }
+} */
+
+/* Section 7 styles */
+#section7 {
+    position: relative; 
+    background-image: url('/static/images/about-slide.jpg'); /* Use forward slashes */
+    background-size: cover; 
+    background-attachment: fixed; 
+    background-position: center;
+    background-repeat: no-repeat; 
+    padding: 60px 0; 
+    height: 100%; 
+}
+
+/* Style for the form box */
+#section7 .form-box {
+    /*
+    background: rgba(48, 48, 127, 0.986); /* Semi-transparent blue background 
+    padding: 20px;
+    border-radius: 8px;
+    max-width: 85%; 
+    max-height: 480px; 
+    overflow-y: auto; 
+    margin-top: 20px;  */
+
+    background: #2e3192;
+    padding: 32px;
+    /* width: 420px; */
+    border-radius: 8px;
+}
+#section7 .form-box2{
+    /* background: rgba(48, 48, 127, 0.986); /* Semi-transparent blue background
+    border-radius: 8px; */
+    width: 100%; 
+    max-height: 480px; 
+    padding: 20px;
+    overflow-y: auto; 
+    margin-top: 20px;
+}
+
+/* Submit button */
+#section7 .btn-primary {
+    display: block; 
+    margin: 0 auto; 
+}
